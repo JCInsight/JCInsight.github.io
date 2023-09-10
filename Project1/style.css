@@ -1,0 +1,133 @@
+body {
+    background-color:rgb(17, 17, 17);
+    overflow-x:hidden;
+    overflow-y:auto;
+}
+.mainBody {
+    font-family:Arial, Helvetica, sans-serif;
+    color:blue;
+    position:absolute;
+    max-width: 45em;
+    top:100px;
+    left:50%;
+    transform: translate(-50%);
+    z-index:5;
+}
+/*header background*/
+.headerbg {
+    position:absolute;
+    background-image:linear-gradient(rgb(78, 3, 22), rgba(17, 17, 17, 0));
+    width:100vw;
+    top:0;
+    transform:translate(-8px, -8px);
+    padding-bottom:200px;
+}
+/*HeaderTABS for styling*/
+.headertabs {
+    position:absolute;
+    color:white;
+
+}
+.footer {
+    position:absolute;
+    color:white;
+    top:1200px;
+}
+.column {
+    position: fixed;
+    background-color: rgb(117, 49, 49);
+    width: 10px;
+    height: 100%;
+    top:0;
+    z-index:-1;
+}
+.enclosingcolumn {
+    background-color: rgb(27, 3, 12);
+    width:20%;
+    max-width:170px;
+    display:block;
+    z-index: 5;
+}
+@media (max-width: 480px) {
+    .enclosingcolumn {
+        display:none;
+    }
+}
+.dropbox {
+    background-color: rgb(51, 182, 187);
+    position:fixed;
+    width:40px;
+    height:13px;
+    left:80%;
+    top:0px;
+    z-index:5;
+}
+.dropbox ~ span {
+    background-color: rgb(200, 228, 124);
+    width:auto;
+    height:100px;
+    padding-right:24px;
+    display:none;
+}
+.dropbox:hover {
+    display:block;
+}
+.dropbox:hover + span {
+    display:block;
+}
+/*Short for parrallelogram*/
+.parallelo {
+    position:absolute;
+    background-color: rgb(198, 230, 230);
+    width:105dvw;
+    min-width:80em;
+    height:270px;
+    top:900px;
+    left:50%;
+    transform:skew(5deg, 5deg) translate(-50%);
+    z-index:-1;
+}
+.circle {
+    background-color:rgb(192, 142, 34);
+    position:absolute;
+    width:300px;
+    height:300px;
+    top:600px;
+    border-radius: 50%;;
+}
+/*Horizontal Line, purely for aesthetics*/
+.horiLine {
+    position:absolute;
+    width:105vi;
+    height:0px;
+    border-color:rgb(161, 161, 161);
+    border-style:solid;
+    border-width:1px;
+    padding:0;
+    margin-left:0;
+    transform:translate(-1%);
+}
+.maintextlarge {
+    position: relative;
+    font-family:Arial, Helvetica, sans-serif;
+    color:rgba(216, 188, 110, 0.959);
+    top:170px;
+    left:calc(35% + 3em);
+    max-width:20em;
+    transform:translate(0);
+    animation: textappear 0.5s ease-out 0s forwards;
+}
+/*i.e. Large text-piece-of-shit*/
+.bigpieceofshit {
+    position:static;
+    float:left;
+    font-family:Arial, Helvetica, sans-serif;
+    color:rgba(231, 207, 142, 0.959);
+    font-size:5em;
+    top:170px;
+    transform:translate(0);
+    animation: textappear 0.5s ease-out 0s forwards;
+}
+@keyframes textappear {
+    0% {transform:translateY(20px); opacity:0.2;}
+}

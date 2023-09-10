@@ -1,0 +1,2 @@
+HI = 3;
+STRING2 = "HEEEEYO";

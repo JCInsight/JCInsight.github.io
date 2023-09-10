@@ -1,0 +1,57 @@
+/*
+This page contains all of the style elements 
+(id wise) from the file "mainpage.html"
+*/
+
+#sun {
+    left:-300px;
+    z-index:2;
+    animation: planetpansun 0.8s ease-out 0.2s forwards;
+}
+/*circle no. 2 and onwards*/
+/*mercury*/
+#cir2 {
+    background-color: rgb(80, 80, 80);
+    width:40px;
+    height:40px;
+    left:80px;
+    top:780px;
+    z-index: 1;
+    animation: planetpanmur 0.84s ease-out 0.2s forwards;
+}
+/*Venus*/
+#cir3 {
+    background-color: rgb(136, 92, 9);
+    width:80px;
+    height:80px;
+    left:140px;
+    top:870px;
+    z-index:3;
+    animation: planetpanven 0.6s ease-out 0.1s forwards;
+}
+#cir4 {
+    background-color: blue;
+    width:120px;
+    height:120px;
+    left:300px;
+    top:900px;
+    z-index:4;
+    animation: planetpanear 0.9s ease-out 0s forwards;
+}
+/*Planet Panning/Translating*/
+@keyframes planetpansun {
+    0% {left:-300px; opacity:0.445;}
+    100% {left:10%;}
+}
+@keyframes planetpanmur {
+    0% {left:-200px; opacity:0.445;}
+    100% {left:calc(10% - 20px);}
+}
+@keyframes planetpanven {
+    0% {left:-80px; opacity:0.445;}
+    100% {left:calc(10% + 40px);}
+}
+@keyframes planetpanear {
+    0% {left:-120px; opacity:0.445;}
+    100% {left:calc(10% + 300px);}
+}
