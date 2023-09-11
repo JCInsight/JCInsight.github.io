@@ -52,6 +52,12 @@ body {
     .enclosingcolumn {
         display:none;
     }
+    .bigpieceofshit {
+        position:absolute;
+        float:none;
+        left:50%;
+        transform: translate(-50%);
+    }
 }
 .dropbox {
     background-color: rgb(51, 182, 187);
