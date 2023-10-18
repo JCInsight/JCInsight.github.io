@@ -22,6 +22,20 @@ body {
     transform:translate(-8px, -8px);
     padding-bottom:200px;
 }
+.DOCtitle {
+    color:beige;
+    font-size:6em;
+    margin-left:20vw;
+    z-index:5;
+}
+.DOCmainBody {
+    color:white;
+    font-family:Arial, Helvetica, sans-serif;
+    margin-top: 170px;
+    margin-left: 30%;
+    width: 50%;
+    max-width:33em;
+}
 /*HeaderTABS for styling*/
 .headertabs {
     position:absolute;
@@ -58,6 +72,12 @@ body {
         left:50%;
         transform: translate(-50%);
     }
+    .DOCtitle {
+        
+        font-size:10vw;
+        margin-left: 10vw;
+        margin-top:100px
+    }
 }
 .dropbox {
     background-color: rgb(51, 182, 187);
@@ -80,7 +100,7 @@ body {
 }
 .dropbox:hover + span {
     display:block;
-}
+} 
 /*Short for parrallelogram*/
 .parallelo {
     position:absolute;
