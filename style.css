@@ -159,6 +159,12 @@ body {
     transform:translate(0);
     animation: textappear 0.5s ease-out 0s forwards;
 }
+.section {
+    color:white;
+    position:fixed;
+    top:30vh;
+    right:20px;
+}
 @keyframes textappear {
     0% {transform:translateY(20px); opacity:0.2;}
 }
