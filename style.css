@@ -98,14 +98,7 @@ body {
     width:auto;
     height:100px;
     padding-right:24px;
-    display:none;
 }
-.dropbox:hover {
-    display:block;
-}
-.dropbox:hover + span {
-    display:block;
-} 
 /*Short for parrallelogram*/
 .parallelo {
     position:absolute;
