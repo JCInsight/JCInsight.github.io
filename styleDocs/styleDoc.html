@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Style Document</title>
+    <link href="styleDoc.css" rel="stylesheet" type="text/css">
+    <script src="styleDoc.js"></script>
+</head>
+<body onload="setInterval(tik(), 1)">
+    <form>
+        <p>
+            
+            <label for="Bbold"><strong>Bold</strong></label> 
+            <input id="Bbold" type="checkbox" onclick="toggle('Bbold', 'font-weight: ', 'bold');"> <br>
+            <label for="Iitalics"><em>Italics</em></label> 
+            <input id="Iitalics" type="checkbox" onclick="toggle('Iitalics', 'font-style: ', 'italic');"> <br>
+            <input class="stylingRange" type="text" maxlength="3"></input>
+        </p>
+    </form>
+    <p id="th">what</p>
+    <div>
+        <p id="styleText">CSS Styling</p>
+    </div>
+</body>
+</html>

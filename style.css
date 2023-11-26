@@ -3,6 +3,10 @@ body {
     overflow-x:hidden;
     overflow-y:auto;
 }
+.links {
+    color:white;
+    text-decoration: none;
+}
 .mainBody {
     font-family:Arial, Helvetica, sans-serif;
     color:blue;
